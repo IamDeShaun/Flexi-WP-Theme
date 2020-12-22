@@ -1,1 +1,1 @@
-# Flexi-WP-Theme
+### A flexible wordpress theme.
