@@ -1,0 +1,70 @@
+.checkerboard-row {
+  max-height: 500px;
+  overflow: hidden;
+  background-color: #d7dbde;
+}
+
+.checkerboard-row img {
+  display: none;
+}
+
+.checkerboard-row .nav {
+  width: 80%;
+  display: inline;
+}
+
+.checkerboard-row .nav h1 {
+  font-size: 1.111rem;
+  font-weight: 600;
+}
+
+ul.arrow-nav {
+  margin: 3% 0 3rem;
+  list-style-type: none;
+  padding: 0 6%;
+}
+
+ul.arrow-nav {
+  list-style-type: none;
+}
+
+ul.arrow-nav li {
+  border-top: 1px solid #9ea2a2;
+  padding: 3% 1%;
+}
+
+ul.arrow-nav li::after {
+  content: "\f054";
+  display: inline-block;
+  margin-left: -1.3em;
+  width: 1.3em;
+  float: right;
+  color: #54585a;
+}
+
+ul.arrow-nav li::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+ul.arrow-nav li a {
+  padding-right: 1.3em;
+  text-decoration: none;
+  color: #54585a;
+}
+
+
+@include breakpoint('medium') {
+  
+  .checkerboard-row img {
+    display: inline;
+    float: left;
+    width: 50%;
+}
+
+.checkerboard-row .nav {
+  float: left;
+  width: 50%;
+}
+
+}

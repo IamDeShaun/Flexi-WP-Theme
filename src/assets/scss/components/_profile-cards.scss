@@ -1,0 +1,36 @@
+.profile-card {
+  background-color: #fff;
+}
+
+.profile-card a {
+  text-decoration: none;
+}
+
+.profile-card img {
+  width: 100%;
+  margin-bottom: .5rem;
+}
+
+.profile-card .profile-card-name {
+  color: #4b88a2;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  margin: 0 0 .75rem 0;
+}
+
+.profile-card a .profile-card-title, .profile-card a .profile-card-text {
+  color: #363436;
+}
+.profile-card .profile-card-title {
+  line-height: 1.25rem;
+  margin: .75rem 0;
+}
+
+@include breakpoint('medium') {
+  .profile-card img {
+    float: left;
+    width: 30%;
+    margin: 0 3% 3% 0;
+  }
+
+}

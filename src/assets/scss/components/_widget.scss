@@ -1,0 +1,108 @@
+aside {
+    border: 1px solid #d3d4d9;
+   box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.05);
+   background-color: #ffffff !important;
+    margin-left: 10px;
+}
+.c-sidebar-widget {
+    background-color: #ffffff;
+    border: 1px solid $grey;
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.05);
+    padding: rem-calc(20);
+    h5 {
+        font-weight: 600;
+    }
+    > ul {
+        list-style: none;
+        margin: 0;
+    }
+}
+
+.c-footer-widget {
+    > ul {
+        list-style: none;
+        margin: 0;
+    }
+    &--light {
+        a, p {
+            opacity: 0.9;
+            color: #fff;
+            font-weight: 300;
+            border-bottom: none;
+        }
+    }
+    .tagcloud {
+        a {
+            font-size: rem-calc(14) !important;
+            background-color: $primary-colour;
+            color: #ffffff;
+            opacity: 1;
+            padding: rem-calc(5 10);
+            margin-bottom: rem-calc(5);
+            display: inline-block;
+        }
+    }
+}
+
+// My Sidebar Widget
+
+.sidebar-nav {
+    background-color: #fff;
+    margin: 0 auto;
+    padding: 1em;
+  
+    h3 {
+      color: #20ddae;
+      font-size: 1rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin: 0 0 .5em 0;
+  }
+  
+  ul.navbar-nav li.nav-item {
+    padding: 0;
+  }
+  
+  ul.navbar-nav li.nav-item a.nav-link {
+    display: block;
+    color: #222;
+    padding: .8em 1em;
+    line-height: 1.3em;
+    border-right: 5px solid #fff;
+  }
+  
+  ul.navbar-nav li.nav-item.has-children ul.navbar-nav li.nav-item::before {
+    content: "■";
+    color: #20ddae;
+    display: inline-block;
+    width: 2%;
+    float: left;
+    font-size: .75rem;
+    text-align: center;
+    padding-top: .75rem;
+    margin-right: 3px;
+  }
+  
+  ul.navbar-nav li.nav-item.has-children ul.navbar-nav li.nav-item a.nav-link {
+    float: left;
+    width: 93%;
+  }
+  
+  ul.navbar-nav li.nav-item.has-children ul.navbar-nav li.nav-item {
+    padding-left: .25rem;
+  }
+  
+  ul ul {
+    list-style: none;
+    padding: 0 0 0 1em;
+  }
+  
+  }
+  
+  .sidebar-nav .xxx-nav-hover, .sidebar-nav ul.navbar-nav li.nav-item.has-children ul.navbar-nav li.nav-item a.nav-link:hover, .sidebar-nav ul.navbar-nav li.nav-item.current > a.nav-link, .sidebar-nav ul.navbar-nav li.nav-item.active > a.nav-link, .sidebar-nav ul.navbar-nav li.nav-item a.nav-link:hover {
+    background-color: #f9f9f9;
+    border-right: 5px solid #20ddae;
+    text-decoration:none;
+  }
+  
+  

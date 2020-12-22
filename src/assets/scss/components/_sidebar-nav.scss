@@ -1,0 +1,59 @@
+.sidebar-nav {
+  background-color: #fff;
+  margin: 0 auto;
+  padding: 1em;
+
+  h3 {
+    color: #20ddae;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0 0 .5em 0;
+}
+
+ul.navbar-nav li.nav-item {
+  padding: 0;
+}
+
+ul.navbar-nav li.nav-item a.nav-link {
+  display: block;
+  color: #222;
+  padding: .8em 1em;
+  line-height: 1.3em;
+  border-right: 5px solid #fff;
+}
+
+ul.navbar-nav li.nav-item.has-children ul.navbar-nav li.nav-item::before {
+  content: "■";
+  color: #20ddae;
+  display: inline-block;
+  width: 2%;
+  float: left;
+  font-size: .75rem;
+  text-align: center;
+  padding-top: .75rem;
+  margin-right: 3px;
+}
+
+ul.navbar-nav li.nav-item.has-children ul.navbar-nav li.nav-item a.nav-link {
+  float: left;
+  width: 93%;
+}
+
+ul.navbar-nav li.nav-item.has-children ul.navbar-nav li.nav-item {
+  padding-left: .25rem;
+}
+
+ul ul {
+  list-style: none;
+  padding: 0 0 0 1em;
+}
+
+}
+
+.sidebar-nav .xxx-nav-hover, .sidebar-nav ul.navbar-nav li.nav-item.has-children ul.navbar-nav li.nav-item a.nav-link:hover, .sidebar-nav ul.navbar-nav li.nav-item.current > a.nav-link, .sidebar-nav ul.navbar-nav li.nav-item.active > a.nav-link, .sidebar-nav ul.navbar-nav li.nav-item a.nav-link:hover {
+  background-color: #f9f9f9;
+  border-right: 5px solid #20ddae;
+  text-decoration:none;
+}
+

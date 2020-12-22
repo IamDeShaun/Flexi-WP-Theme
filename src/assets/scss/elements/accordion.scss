@@ -1,0 +1,38 @@
+body, html {
+  background: #f9f9f9;
+}
+.accordion {
+background: white;
+color: #4b88a2;
+width: 100%;
+text-align: left;
+text-decoration: none;
+text-transform: uppercase;
+padding: 1rem 3rem;
+border: 0;
+border-bottom: 1px solid #d7dbde;
+transition: 0.4s;
+font-weight: 500;
+
+}
+
+.accordion::before {
+  content: "\f067";
+  font-size: 16px;
+  margin-right: .5em;
+  color: #4b88a2;
+}
+
+.accordion::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
+}
+
+/* .active::before { 
+  content: "\f068";
+  font-weight: 600;
+} */
+.accordion-group .accordion-item.active .accordion:before {
+  content: "\f068";
+  font-weight: 600;
+}

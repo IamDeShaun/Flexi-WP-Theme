@@ -1,0 +1,98 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+body{
+  font-family: $flexi-sans;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+}
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+.p-1 {
+  padding: .25rem !important;
+}
+
+.main {
+  margin-top: 75px !important;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  margin-bottom: .5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+sup {
+  top: -.5em;
+}
+sub, sup {
+  position: relative;
+  font-size: 75%;
+  line-height: 0;
+  vertical-align: baseline;
+}
+
+pre {
+  display: block;
+  font-size: 87.5%;
+  color: #212529;
+}
+pre {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  overflow: auto;
+}
+
+.pattern {
+  padding: 1rem;
+}
+
+.fullscreenimage {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: 
+rgba(0, 0, 0, 0.6) url("http://placeimg.com/1000/800/animals");
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-attachment: scroll;
+  background-size: auto;
+background-size: cover;
+background-attachment: fixed;
+background-position: center;
+background-blend-mode: overlay;
+color:white;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+img {
+  vertical-align: middle;
+  border-style: none;
+}
+
+.pt-5, .py-5 {
+  padding-top: 3rem !important;
+}
+.pb-3, .py-3 {
+  padding-bottom: 1rem !important;
+}

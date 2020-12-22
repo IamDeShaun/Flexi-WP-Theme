@@ -1,0 +1,41 @@
+button.accordion {
+  background: white;
+  color: #4b88a2;
+  width: 100%;
+  text-align: left;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 1rem 3rem;
+  border: 0;
+  border-bottom: 1px solid #d7dbde;
+  transition: 0.4s;
+  font-weight: 500;
+  cursor: pointer;
+  }
+  
+  .accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.4s ease max-height;
+
+    h1 {
+      font-size: 1.5rem;
+      padding: 1rem 3rem !important;
+    }
+    p {
+      padding-left: 3rem !important;
+      padding-right: 3rem !important;
+      padding-bottom: 1rem;
+      margin-bottom: 1rem;
+    }
+    a {
+      color: #4b88a2;
+      text-decoration: underline;
+      font-weight: 600;
+
+      &:hover {
+        color: #000;
+        text-decoration: underline;
+      }
+      }
+  }

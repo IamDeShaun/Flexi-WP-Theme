@@ -1,0 +1,40 @@
+// @import url('https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700,700i');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700');
+
+$body-background: #f3f3f3 !default;
+$body-font-family: 'Roboto Slab', serif !default;
+$global-weight-normal: 400 !default;
+$global-lineheight: 1.5 !default;
+$body-font-color: #000000 !default;
+$base-font-size: 100% !default;
+$global-width: 1200 !default;
+
+// Flexi Font
+$flexi-sans: "Source Sans Pro",sans-serif;
+
+
+$font-size-small : 0.75em;
+$font-size-small-2 : 0.875em;
+$font-size-med : 1em;
+$font-size-med-2: 1.0625em;
+$font-size-large : 1.4375em;
+
+
+//Layout
+$max-width: 90em;
+
+//Defaults
+$space : 1em;
+$space-and-half : $space*1.5;
+$space-double : $space*2;
+$space-quad : $space*4;
+$space-half : $space/2;
+$pad : 1em;
+$pad-and-half : $pad*1.5;
+$pad-double : $pad*2;
+$pad-half : $pad/2;
+$pad-quarter :$pad/4;
+
+//Borders
+$border-med: 3px;
+$border-thick: 7px;

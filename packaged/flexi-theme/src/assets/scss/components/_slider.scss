@@ -1,0 +1,117 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  color: #fff;
+  line-height: 1.6;
+}
+
+.slider {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+
+  .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+
+    &.current {
+     opacity: 1; 
+
+     .slide-content {
+      opacity: 1;
+      transform: translateX(600px);
+      transition: all 0.7s ease-in-out 0.4s;
+     }
+
+    }
+
+    .slide-content {
+      position: absolute;
+      bottom: 70px;
+      left: -600px;
+      width: 600px;
+      opacity: 0;
+      background-color: rgba(255, 255, 255, 0.8);
+      color: #333;
+      padding: 35px;
+
+    }
+
+  }
+
+}
+
+.slider-buttons button#next {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+}
+
+.slider-buttons button#prev {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+}
+
+.slider-buttons button {
+  border: 2px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  padding: 13px 15px;
+  outline: none;
+
+  &:hover {
+    background-color: #fff;
+    color: #333;
+  }
+}
+
+@include breakpoint('small') { 
+  .slide {
+    .slide-content {
+      bottom: -300px !important;
+      left: 0 !important;
+      width: 100% !important;
+    }
+
+     &.current .slide-content {
+    transform: translateY(-300px) !important;
+  }
+
+  }
+
+}
+
+/* Background Images */
+
+.slide:first-child {
+  background: url('http://placeimg.com/1280/720/nature/grayscale') no-repeat center center/cover;
+}
+
+.slide:nth-child(2) {
+  background: url('http://placeimg.com/1280/720/arch/grayscale') no-repeat center center/cover;
+}
+.slide:nth-child(3) {
+  background: url('http://placeimg.com/1280/720/animals/grayscale') no-repeat center center/cover;
+}
+.slide:nth-child(4) {
+  background: url('http://placeimg.com/1280/720/people/grayscale') no-repeat center center/cover;
+}
+.slide:nth-child(5) {
+  background: url('http://placeimg.com/1280/720/arch/grayscale') no-repeat center center/cover;
+}
+.slide:nth-child(6) {
+  background: url('http://placeimg.com/1280/720/nature/grayscale') no-repeat center center/cover;
+}

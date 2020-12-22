@@ -1,0 +1,132 @@
+nav{
+  background: #fff;
+  float: right;
+  order: 1;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+    li {
+      list-style: none;
+      position: relative;
+
+      &.menu-item-has-children:before {
+        font-family: 'FontAwesome'; 
+        content: '\f107';
+        position: absolute;
+        line-height: 50px;
+        color: #363436;
+        right: 5px;
+      }
+
+      &.menu-item-has-children.active:before {
+       font-family: 'FontAwesome'; 
+        content: '\f106';
+      }
+
+      ul {
+        position: absolute;
+        left: 0;
+        background: #20ddae;
+        display: none;
+        &.submenu {
+          display: none !important;
+        }
+        li {
+          display: block;
+          width: 200px;
+
+          a {
+            color: #fff;
+            display: block;
+  
+            &:hover {
+              color: #fff;
+              background: #19b08a;
+            }
+            
+          }
+        }
+      }
+
+      a {
+        height: 50px;
+        font-size: .75rem;
+        line-height: 50px;
+        padding: 0 20px;
+        color: #363436;
+        text-decoration: none;
+        text-transform: uppercase;
+
+        &:hover, &.active {
+          color:#20ddae;
+          transition: all .5s ease-in-out; 
+          text-decoration: none;
+        }
+      }
+
+      &.active ul {
+        display: block !important;
+
+        li a {
+          border-bottom: 1px solid #19b08a;
+        }
+      }
+    }
+  }
+}
+
+.navbar-nav {
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+/* Mobile Menu */
+
+.mobile-menu ul {
+  background: #20ddae;
+
+  ul li a {
+    color: #fff;
+  }
+}
+
+// Breadcrumbs 
+nav.breadcrumb-wrapper {
+  float: none !important;
+}
+.breadcrumb {
+  background-color: #fff;
+  font-weight: 600;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: .75rem 1rem;
+  margin-bottom: 1rem;
+  list-style: none;
+  border-radius: .25rem;
+
+  .breadcrumb-item {
+    display: flex;
+}
+
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  content: "\f105";
+  display: inline-block;
+  padding-right: .5rem;
+  color: #6c757d;
+  font-family: "Font Awesome 5 Free";
+  
+}
+
+.breadcrumb-item + .breadcrumb-item {
+  padding-left: .5rem;
+}

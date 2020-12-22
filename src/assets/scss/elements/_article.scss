@@ -1,0 +1,76 @@
+article.article-content {
+  padding: 1.2rem;
+  color: #333;
+  overflow: hidden;
+
+
+  .article-body {
+    background: white;
+  }
+
+  img.responsive {
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  .article-wrapper {
+
+    @include breakpoint('medium') { 
+      display: flex;
+    }
+
+  }
+
+  .article-body {
+    flex: 1;
+    background: white;
+    padding: 1rem;
+  }
+
+  aside {
+    flex: 0 0 350px;
+    background: white;
+    margin-left: 10px;
+  }
+
+  .sidebar-nav {
+    border-bottom: 1px solid #eeeeee;
+  }
+}
+
+article {
+  
+  header {
+    display: block !important;
+    position: relative;
+    padding: 0;
+    border-bottom: none;
+  }
+
+  h2.entry-title {
+    a {
+     text-decoration: none; 
+
+     &:hover {
+       text-decoration: underline;
+     }
+    }
+  }
+
+  a {
+    color:#20ddae;
+  
+    &:hover {
+      color: #252627;
+      text-decoration: underline;
+  
+      transition: .5s all;
+    }
+  }
+}

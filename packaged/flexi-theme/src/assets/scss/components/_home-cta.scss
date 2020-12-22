@@ -1,0 +1,50 @@
+@include breakpoint('large') {
+  .home-feature-cta {
+    height: 50vw;
+    position: relative;
+
+    h1 {
+      position: absolute;
+      bottom: 35%;
+      left: 5%;
+      width: 50%;
+    }
+
+    .home-feature-cta-overlay {
+      position: absolute;
+      top: 0;
+      left: 65%;
+      width: 30%;
+      height: 50vw;
+      overflow: hidden;
+    }
+  }
+}
+
+.has-bg-image {
+  background-color: #222;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home-feature-cta {
+  .home-feature-cta-overlay {
+    background-color: #fff;
+    padding: 3%;
+  }
+
+  .home-feature-cta-overlay h2 {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    color: #00205c;
+    text-transform: uppercase;
+  }
+
+  .home-feature-cta-overlay p {
+    line-height: 1.5rem;
+    color: #212529;
+  }
+  
+}
+
